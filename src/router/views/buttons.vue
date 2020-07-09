@@ -12,7 +12,8 @@ export default {
 
 <template>
   <Layout>
-    <BaseButton>My Button</BaseButton>
+    <BaseButton>Default</BaseButton> <div> <br /></div>
+    <BaseButton variant="outline">Default</BaseButton>
   </Layout>
 </template>
 

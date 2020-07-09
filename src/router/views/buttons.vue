@@ -13,7 +13,9 @@ export default {
 <template>
   <Layout>
     <BaseButton>Default</BaseButton> <div> <br /></div>
-    <BaseButton variant="outline">Default</BaseButton>
+    <BaseButton variant="outline">Default</BaseButton> <div> <br /></div>
+    <BaseButton variant="text">Default</BaseButton><div> <br /></div>
+    <BaseButton disable disable-shadow>Default</BaseButton> <div> <br /></div>
   </Layout>
 </template>
 

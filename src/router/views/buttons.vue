@@ -12,7 +12,7 @@ export default {
 
 <template>
   <Layout>
-    <BaseButton>Default</BaseButton> <div> <br /></div>
+    <BaseButton size="lg">Default</BaseButton> <div> <br /></div>
     <BaseButton variant="outline">Default</BaseButton> <div> <br /></div>
     <BaseButton variant="text">Default</BaseButton><div> <br /></div>
     <BaseButton start-icon="local_grocery_store">Default</BaseButton

@@ -1,10 +1,9 @@
 <script>
 export default {
   props: {
-    variant: {
-      type: String,
-      default: 'default',
-    },
+    variant: { type: String, default: 'default' },
+    color: { type: String, default: 'default' },
+    size: { type: String, default: 'md' },
     disableShadow: Boolean,
     disable: Boolean,
     startIcon: { type: String, required: false, default: null },
@@ -21,7 +20,11 @@ export default {
   },
   methods: {
     getClass() {
-      return [this.$style.button, this.$style[this.variant]]
+      return [
+        this.$style.button,
+        this.$style[this.variant],
+        this.$style[this.size],
+      ]
     },
   },
 }
@@ -57,7 +60,6 @@ export default {
 .button {
   @extend %typography-small;
 
-  padding: $size-button-padding;
   font-family: $system-default-font-family;
   font-size: 17px;
   font-weight: 600;
@@ -65,6 +67,18 @@ export default {
   border: none;
   border-radius: 6px;
   box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
+}
+.md {
+  padding: 8px 16px;
+  font-size: 17px;
+}
+.sm {
+  padding: 5px 13px;
+  font-size: 15px;
+}
+.lg {
+  padding: 14px 22px;
+  font-size: 20px;
 }
 .default {
   color: $color-button-text;

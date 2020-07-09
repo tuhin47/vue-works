@@ -12,7 +12,7 @@ export default {
 
 <template>
   <Layout>
-    Buttons
+    <BaseButton>My Button</BaseButton>
   </Layout>
 </template>
 

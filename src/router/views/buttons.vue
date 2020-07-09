@@ -15,7 +15,10 @@ export default {
     <BaseButton>Default</BaseButton> <div> <br /></div>
     <BaseButton variant="outline">Default</BaseButton> <div> <br /></div>
     <BaseButton variant="text">Default</BaseButton><div> <br /></div>
-    <BaseButton disable disable-shadow>Default</BaseButton> <div> <br /></div>
+    <BaseButton start-icon="local_grocery_store">Default</BaseButton
+    ><div><br /></div>
+    <BaseButton end-icon="local_grocery_store">Default</BaseButton>
+    <div> <br /></div>
   </Layout>
 </template>
 

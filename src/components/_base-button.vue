@@ -7,6 +7,8 @@ export default {
     },
     disableShadow: Boolean,
     disable: Boolean,
+    startIcon: { type: String, required: false, default: null },
+    endIcon: { type: String, required: false, default: null },
   },
   computed: {
     styles() {
@@ -32,13 +34,26 @@ export default {
     :disabled="disable"
     v-on="$listeners"
   >
+    <i
+      v-if="startIcon"
+      class="material-icons"
+      style="float:left;margin-right:2px"
+    >
+      {{ startIcon }}
+    </i>
     <slot />
+    <i
+      v-if="endIcon"
+      class="material-icons"
+      style="float:right;margin-left:2px"
+    >
+      {{ endIcon }}
+    </i>
   </button>
 </template>
 
 <style lang="scss" module>
 @import '@design';
-
 .button {
   @extend %typography-small;
 
@@ -49,7 +64,7 @@ export default {
   cursor: pointer;
   border: none;
   border-radius: 6px;
-  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.3);
+  box-shadow: 0 2px 3px rgba(51, 51, 51, 0.2);
 }
 .default {
   color: $color-button-text;

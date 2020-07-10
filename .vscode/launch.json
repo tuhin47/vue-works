@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "command": "yarn run dev",
+      "name": "DEV",
+      "request": "launch",
+      "type": "node-terminal",
+      "cwd": "${workspaceRoot}"
+    }
+  ]
+}

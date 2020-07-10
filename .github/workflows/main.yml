@@ -12,7 +12,7 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  cypress-run:
+  normal-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,12 +21,5 @@ jobs:
         run: sudo apt-get install xvfb libxss1
       - name: yarn no optional
         run: yarn --no-optional
-      - name: Cypress run
-        uses: cypress-io/github-action@v1
-        with:
-          start: yarn run test:e2e
-          wait-on: http://localhost:8080/
-          config_file: cypress.json
-          spec: 'tests/e2e/**/*'
-        env:
-          CYPRESS_baseUrl: http://localhost:8080/
+      - name: run test:e2e
+        run: yarn run test:e2e

@@ -19,6 +19,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Install Xvfb libxss1
         run: sudo apt-get install xvfb libxss1
+      - name: yarn no optional
+        run: yarn --no-optional
       - name: Cypress run
         uses: cypress-io/github-action@v1
         with:

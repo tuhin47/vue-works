@@ -7,6 +7,11 @@ export default [
     component: () => lazyLoadView(import('@views/home.vue')),
   },
   {
+    path: '/buttons',
+    name: 'button',
+    component: () => lazyLoadView(import('@views/buttons.vue')),
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => lazyLoadView(import('@views/login.vue')),

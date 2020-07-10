@@ -11,6 +11,10 @@ export default {
           name: 'home',
           title: 'Home',
         },
+        {
+          name: 'button',
+          title: 'Buttons',
+        },
       ],
       loggedInNavRoutes: [
         {
@@ -39,8 +43,8 @@ export default {
 <template>
   <ul :class="$style.container">
     <NavBarRoutes :routes="persistentNavRoutes" />
-    <NavBarRoutes v-if="loggedIn" :routes="loggedInNavRoutes" />
-    <NavBarRoutes v-else :routes="loggedOutNavRoutes" />
+    <!-- <NavBarRoutes v-if="loggedIn" :routes="loggedInNavRoutes" />
+    <NavBarRoutes v-else :routes="loggedOutNavRoutes" /> -->
   </ul>
 </template>
 

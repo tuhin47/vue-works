@@ -11,6 +11,9 @@ $color-link-text-active: $color-text;
 $color-input-border: lighten($color-heading-text, 50%);
 
 // BUTTONS
-$color-button-bg: $color-link-text;
-$color-button-disabled-bg: darken(desaturate($color-button-bg, 20%), 10%);
-$color-button-text: white;
+$color-button-bg: #e0e0e0;
+$color-button-disabled-bg: #aeaeae;
+$color-button-text: #3f3f3f;
+
+$color-button-disabled-bg-outline: rgba(41, 98, 255, 0.1);
+$color-button-text-outline: #3d5afe;

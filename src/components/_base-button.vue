@@ -14,7 +14,7 @@ export default {
       const obj = {}
       if (this.disableShadow) obj['box-shadow'] = 'none'
       if (this.disable) {
-        obj.color = 'red'
+        obj.color = '#867474b5'
         obj.cursor = 'not-allowed'
       }
       return obj

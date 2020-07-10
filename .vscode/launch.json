@@ -1,12 +1,25 @@
 {
-  "version": "0.0.1",
+  "version": "0.2.0",
   "configurations": [
     {
       "command": "yarn run dev",
       "name": "DEV",
       "request": "launch",
       "type": "node-terminal",
-      "cwd": "${workspaceRoot}"
+      "cwd": "${workspaceRoot}",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**"]
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "vuejs: chrome debug",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}/src",
+      "breakOnLoad": true,
+      "sourceMapPathOverrides": {
+        "webpack:///src/*": "${webRoot}/*"
+      }
     }
   ]
 }

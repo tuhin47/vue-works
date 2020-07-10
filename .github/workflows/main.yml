@@ -20,6 +20,6 @@ jobs:
       - name: Install Xvfb libxss1
         run: sudo apt-get install xvfb libxss1
       - name: yarn no optional
-        run: yarn --ignore-optional
+        run: yarn install --ignore-optional
       - name: build
         run: yarn run build

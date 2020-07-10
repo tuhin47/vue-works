@@ -11,11 +11,13 @@ export default {
   },
   computed: {
     styles() {
-      if (this.disableShadow)
-        return {
-          'box-shadow': 'none',
-        }
-      return {}
+      const obj = {}
+      if (this.disableShadow) obj['box-shadow'] = 'none'
+      if (this.disable) {
+        obj.color = 'red'
+        obj.cursor = 'not-allowed'
+      }
+      return obj
     },
   },
   methods: {
@@ -24,6 +26,7 @@ export default {
         this.$style.button,
         this.$style[this.variant],
         this.$style[this.size],
+        this.$style[this.color],
       ]
     },
   },
@@ -38,7 +41,7 @@ export default {
     v-on="$listeners"
   >
     <i
-      v-if="startIcon"
+      v-if="startIcon !== null"
       class="material-icons"
       style="float:left;margin-right:2px"
     >
@@ -46,7 +49,7 @@ export default {
     </i>
     <slot />
     <i
-      v-if="endIcon"
+      v-if="endIcon !== null"
       class="material-icons"
       style="float:right;margin-left:2px"
     >
@@ -60,6 +63,7 @@ export default {
 .button {
   @extend %typography-small;
 
+  margin-right: 20px;
   font-family: $system-default-font-family;
   font-size: 17px;
   font-weight: 600;
@@ -86,6 +90,32 @@ export default {
   &:hover,
   &:focus {
     background: $color-button-disabled-bg;
+  }
+}
+.primary {
+  color: #fff;
+  background: #2962ff;
+  &:hover,
+  &:focus {
+    background: #0039cb;
+  }
+}
+
+.secondary {
+  color: #fff;
+  background: #455a64;
+  &:hover,
+  &:focus {
+    background: #1c313a;
+  }
+}
+
+.danger {
+  color: #fff;
+  background: #d32f2f;
+  &:hover,
+  &:focus {
+    background: #9a0007;
   }
 }
 .outline {

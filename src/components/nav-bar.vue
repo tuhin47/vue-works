@@ -15,6 +15,10 @@ export default {
           name: 'button',
           title: 'Buttons',
         },
+        {
+          name: 'alert',
+          title: 'Alert',
+        },
       ],
       loggedInNavRoutes: [
         {

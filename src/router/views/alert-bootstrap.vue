@@ -75,7 +75,10 @@ export default {
       </div>
     </b-container>
     <b-container class="bcontainer bv-example-row" fluid>
-      <h2>#Contextual variants</h2>
+      <h2
+        >#Contextual variants
+        <b-badge pill variant="primary">Primary</b-badge>
+      </h2>
       <b-row>
         <b-col><b-alert show variant="primary">Primary Alert</b-alert></b-col>
         <b-col><b-alert show variant="secondary">Secondary</b-alert></b-col>
@@ -93,7 +96,7 @@ export default {
       </b-row>
     </b-container>
     <b-container>
-      <h2>#Additional content inside alerts</h2>
+      <h2>#Additional content inside alerts <b-badge>New</b-badge></h2>
       <div>
         <b-alert show variant="info">
           <h4 class="alert-heading">Well done!</h4>

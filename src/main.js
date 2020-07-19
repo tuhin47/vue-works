@@ -1,8 +1,11 @@
-import Vue from 'vue'
 import router from '@router'
 import store from '@state/store'
+import Vue from 'vue'
 import App from './app.vue'
 
+import '@plugins/bootstrap-vue'
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 // Globally register all `_base`-prefixed components
 import '@components/_globals'
 

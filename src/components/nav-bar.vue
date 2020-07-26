@@ -19,6 +19,10 @@ export default {
           name: 'alert',
           title: 'Alert',
         },
+        {
+          name: 'card',
+          title: 'Card',
+        },
       ],
       loggedInNavRoutes: [
         {

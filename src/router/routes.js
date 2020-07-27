@@ -22,6 +22,11 @@ export default [
     component: () => lazyLoadView(import('@views/card-view.vue')),
   },
   {
+    path: '/video',
+    name: 'video',
+    component: () => lazyLoadView(import('@views/video.vue')),
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => lazyLoadView(import('@views/login.vue')),

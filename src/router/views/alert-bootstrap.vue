@@ -75,7 +75,10 @@ export default {
       </div>
     </b-container>
     <b-container class="bcontainer bv-example-row" fluid>
-      <h2>#Contextual variants</h2>
+      <h2
+        >#Contextual variants
+        <b-badge pill variant="primary">Primary</b-badge>
+      </h2>
       <b-row>
         <b-col><b-alert show variant="primary">Primary Alert</b-alert></b-col>
         <b-col><b-alert show variant="secondary">Secondary</b-alert></b-col>
@@ -91,6 +94,24 @@ export default {
         <b-col><b-alert show variant="dark">Dark Alert</b-alert></b-col>
         <b-col></b-col>
       </b-row>
+    </b-container>
+    <b-container>
+      <h2>#Additional content inside alerts <b-badge>New</b-badge></h2>
+      <div>
+        <b-alert show variant="info">
+          <h4 class="alert-heading">Well done!</h4>
+          <p>
+            Aww yeah, you successfully read this important alert message. This
+            example text is going to run a bit longer so that you can see how
+            spacing within an alert works with this kind of content.
+          </p>
+          <hr />
+          <p class="mb-0">
+            Whenever you need to, be sure to use margin utilities to keep things
+            nice and tidy.
+          </p>
+        </b-alert>
+      </div>
     </b-container>
   </Layout>
 </template>

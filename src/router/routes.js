@@ -17,6 +17,11 @@ export default [
     component: () => lazyLoadView(import('@views/alert-bootstrap.vue')),
   },
   {
+    path: '/card',
+    name: 'card',
+    component: () => lazyLoadView(import('@views/card-view.vue')),
+  },
+  {
     path: '/login',
     name: 'login',
     component: () => lazyLoadView(import('@views/login.vue')),

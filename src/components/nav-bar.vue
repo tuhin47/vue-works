@@ -27,6 +27,10 @@ export default {
           name: 'video',
           title: 'Video',
         },
+        {
+          name: 'editor',
+          title: 'Editor',
+        },
       ],
       loggedInNavRoutes: [
         {

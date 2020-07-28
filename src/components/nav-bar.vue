@@ -23,6 +23,14 @@ export default {
           name: 'card',
           title: 'Card',
         },
+        {
+          name: 'video',
+          title: 'Video',
+        },
+        {
+          name: 'editor',
+          title: 'Editor',
+        },
       ],
       loggedInNavRoutes: [
         {

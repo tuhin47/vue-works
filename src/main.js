@@ -4,6 +4,7 @@ import Vue from 'vue'
 import App from './app.vue'
 
 import '@plugins/bootstrap-vue'
+import '@plugins/v-md-editor'
 import '@babel/polyfill'
 import 'mutationobserver-shim'
 // Globally register all `_base`-prefixed components

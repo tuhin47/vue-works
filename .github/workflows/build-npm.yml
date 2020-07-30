@@ -22,6 +22,6 @@ jobs:
       - name: yarn
         run: yarn install --ignore-platform
       - name: build
-        run: npm run build
+        run: yarn run build
       - name: test
-        run: npm run test:e2e
+        run: yarn run test:e2e

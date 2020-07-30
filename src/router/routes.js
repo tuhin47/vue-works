@@ -3,7 +3,7 @@ import store from '@state/store'
 export default [
   {
     path: '/',
-    name: 'home',
+    name: 'wakatime',
     component: () => lazyLoadView(import('@views/home.vue')),
   },
   {
@@ -116,7 +116,7 @@ export default [
   // require some server configuration to work in production:
   // https://router.vuejs.org/en/essentials/history-mode.html#example-server-configurations
   {
-    path: '*',
+    path: ' * ',
     redirect: '404',
   },
 ]

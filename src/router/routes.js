@@ -3,7 +3,7 @@ import store from '@state/store'
 export default [
   {
     path: '/',
-    name: 'wakatime',
+    name: 'home',
     component: () => lazyLoadView(import('@views/home.vue')),
   },
   {

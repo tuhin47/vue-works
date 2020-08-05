@@ -4,6 +4,13 @@ const appConfig = require('./src/app.config')
 module.exports = {
   // https://github.com/neutrinojs/webpack-chain/tree/v4#getting-started
   chainWebpack(config) {
+    // version
+    config.plugin('define').tap((args) => {
+      const v = JSON.stringify(require('./package.json').version)
+      args[0]['process.env'].VERSION = v
+      return args
+    })
+
     // set dev tool
     config.set('devtool', appConfig.devtool)
 

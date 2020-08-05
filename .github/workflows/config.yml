@@ -15,6 +15,10 @@ jobs:
   single:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        run: sudo apt-get install xvfb libxss1 libgconf-2-4
+      - name: yarn
+        run: yarn install --ignore-platform
       - uses: actions/checkout@v1
       - uses: cypress-io/github-action@v2
         with:
@@ -22,5 +26,5 @@ jobs:
           install: yarn --ignore-platform
           build: yarn build
           test: yarn test:ci
-          start: yarn dev --port=5000
-          wait-on: 'http://localhost:5000'
+          start: yarn dev --port=8080
+          wait-on: 'http://localhost:8080'

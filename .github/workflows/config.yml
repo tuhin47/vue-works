@@ -19,7 +19,8 @@ jobs:
       - uses: cypress-io/github-action@v2
         with:
           working-directory: ./
-          build: yarn --ignore-platform && yarn build
-          test: sudo apt-get install libgconf-2-4 && yarn test:ci
+          install: yarn --ignore-platform
+          build: yarn build
+          test: yarn test:ci
           start: yarn dev --port=5000
           wait-on: 'http://localhost:5000'

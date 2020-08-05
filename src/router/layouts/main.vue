@@ -1,13 +1,9 @@
 <script>
 import NavBar from '@components/nav-bar.vue'
+import Footer from '@components/footer-basic.vue'
 
 export default {
-  components: { NavBar },
-  computed: {
-    version: function() {
-      return process.env.VERSION
-    },
-  },
+  components: { NavBar, Footer },
 }
 </script>
 
@@ -16,10 +12,8 @@ export default {
     <div :class="$style.container">
       <NavBar />
       <slot />
+      <Footer />
     </div>
-    <footer
-      ><div style="float:right">{{ version }}</div></footer
-    >
   </div>
 </template>
 

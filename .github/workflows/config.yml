@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: NPM
+name: Cypress
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -12,16 +12,14 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  cypress-run:
-    runs-on: ubuntu-16.04
+  single:
+    runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v1
-      - name: Cypress run
-        uses: cypress-io/github-action@v2
+      - uses: actions/checkout@v1
+      - uses: cypress-io/github-action@v2
         with:
-          build: yarn --ignore-platform
-      - name: Custom tests 🧪
-        uses: cypress-io/github-action@1
-        with:
-          command: sudo apt-get install libgconf-2-4 && yarn test:ci
+          working-directory: ./
+          build: yarn build
+          test: sudo apt-get install libgconf-2-4 && yarn test:ci
+          start: yarn dev
+          wait-on: 'http://localhost:5000'

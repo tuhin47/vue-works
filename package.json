@@ -1,6 +1,6 @@
 {
   "name": "challange",
-  "version": "1.22.4",
+  "version": "0.3.1",
   "private": true,
   "scripts": {
     "dev": "vue-cli-service serve",
@@ -32,6 +32,7 @@
     "pre-commit": "cross-env PRE_COMMIT=true lint-staged"
   },
   "dependencies": {
+    "@amcharts/amcharts4": "4.9.x",
     "@fortawesome/fontawesome-svg-core": "1.2.27",
     "@fortawesome/free-solid-svg-icons": "5.12.1",
     "@fortawesome/vue-fontawesome": "0.1.9",
@@ -79,7 +80,7 @@
     "popper.js": "^1.16.0",
     "portal-vue": "^2.1.6",
     "sass": "1.26.x",
-    "sass-loader": "^8.0.0",
+    "sass-loader": "8.0.x",
     "stylelint": "13.2.x",
     "stylelint-config-css-modules": "2.2.x",
     "stylelint-config-prettier": "8.0.x",

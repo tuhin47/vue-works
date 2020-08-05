@@ -8,8 +8,8 @@ export default {
     return {
       persistentNavRoutes: [
         {
-          name: 'wakatime',
-          title: 'WakaTime',
+          name: 'home',
+          title: 'Home',
         },
         {
           name: 'button',

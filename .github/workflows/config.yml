@@ -19,8 +19,6 @@ jobs:
         uses: actions/checkout@v1
       - name: Install Xvfb libxss1
         run: sudo apt-get install xvfb libxss1 libgconf-2-4
-      - name: remove
-        run: rm -rf node_modules yarn.lock package-lock.json
       - name: yarn
         run: yarn install --ignore-platform
       - name: build

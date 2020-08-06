@@ -18,8 +18,5 @@ jobs:
       - uses: actions/checkout@v1
       - uses: cypress-io/github-action@v2
         with:
-          config-file: cypress.json
-          browser: chrome
-          headless: true
           start: yarn test:ci
           wait-on: 'http://localhost:8080'

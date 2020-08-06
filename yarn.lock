@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@amcharts/amcharts4@^4.9.34":
+"@amcharts/amcharts4@4.9.x":
   version "4.9.34"
   resolved "https://registry.yarnpkg.com/@amcharts/amcharts4/-/amcharts4-4.9.34.tgz#239cc7ccd07a7334e115d5f4d4de26fba40e5477"
   integrity sha512-pD8e9dZonNdpjUh/ojxlTUlwmXxgSxsUpQOdc4W6K/coH3+314EGT70prbt41arVRzJAZVkZ27zVnAG5OPmePQ==
@@ -12589,7 +12589,7 @@ sane@^4.0.3:
     minimist "^1.1.1"
     walker "~1.0.5"
 
-sass-loader@^8.0.0:
+sass-loader@8.0.x:
   version "8.0.2"
   resolved "https://registry.yarnpkg.com/sass-loader/-/sass-loader-8.0.2.tgz#debecd8c3ce243c76454f2e8290482150380090d"
   integrity sha512-7o4dbSK8/Ol2KflEmSco4jTjQoV988bM82P9CZdmo9hR3RLnvNc0ufMNdMrB0caq38JQ/FgF4/7RcbcfKzxoFQ==

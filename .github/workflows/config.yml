@@ -21,3 +21,5 @@ jobs:
           config-file: cypress.json
           browser: chrome
           headless: true
+          start: yarn test:ci
+          wait-on: 'http://localhost:8080'

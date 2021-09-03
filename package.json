@@ -37,7 +37,7 @@
     "@fortawesome/free-solid-svg-icons": "5.12.1",
     "@fortawesome/vue-fontawesome": "0.1.9",
     "@kangc/v-md-editor": "^1.4.8",
-    "axios": "0.19.2",
+    "axios": "0.21.1",
     "bootstrap-vue": "^2.1.0",
     "core-js": "3.6.4",
     "date-fns": "2.10.0",
